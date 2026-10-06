@@ -1,0 +1,9 @@
+name: ntfy-notify
+version: 1.0.0
+description: "ntfy push notification at the end of every Hermes WebUI turn (platform api_server): short reply preview, link to the session, failure alert. Cron jobs go through the bundled ntfy platform plugin."
+author: "Charles-HL"
+provides_hooks:
+  - pre_llm_call
+  - post_llm_call
+  - on_session_end
+requires_env: []
